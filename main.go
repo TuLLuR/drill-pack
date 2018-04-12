@@ -15,6 +15,7 @@ func greet(w http.ResponseWriter, r *http.Request) {
 func lissajousCurve(w http.ResponseWriter, r *http.Request) {
 	lissajous.Lissajous(w)
 }
+
 func main() {
 	http.HandleFunc("/", greet)
 	http.HandleFunc("/lissajous", lissajousCurve)
