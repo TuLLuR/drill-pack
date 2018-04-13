@@ -20,7 +20,7 @@ func greet(w http.ResponseWriter, r *http.Request) {
 
 func index(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	t, _ := template.ParseFiles("index.html")
+	t, _ := template.ParseFiles("html/index.html")
 	t.Execute(w, &page{Title: "Just Page", Msg: "Hello, World!"})
 }
 
