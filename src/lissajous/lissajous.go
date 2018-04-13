@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-// Simple color pallete {white/grey - red}
+// Simple color palette {white/grey - red}
 var palette = []color.Color{color.RGBA{92, 87, 87, 1}, color.RGBA{92, 3, 3, 1}}
 
 const (
